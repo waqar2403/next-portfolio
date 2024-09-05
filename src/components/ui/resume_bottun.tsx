@@ -36,13 +36,12 @@ const Button = React.forwardRef<
     const Comp = asChild ? Slot : href ? "a" : "button"; // Use 'a' when href is present, otherwise 'button'
     const variantClass = buttonVariantClasses[variant];
     const sizeClass = buttonSizeClasses[size];
-
     return (
       <Comp
         href={href} // Use href for anchor tag
         download={href ? "resume.pdf" : undefined} // Set download if href is present
         className={`inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 ${variantClass} ${sizeClass} ${className}`}
-        // ref={ref as React.Ref<HTMLAnchorElement> | React.Ref<HTMLButtonElement>} // Type assertion for ref
+        // ref={ref as React.Ref<HTMLAnchorElement | HTMLButtonElement>} // Type assertion for ref
         {...props}
       >
         Download Resume
@@ -53,4 +52,4 @@ const Button = React.forwardRef<
 
 Button.displayName = "Button";
 
-export { Button };
+export { Button };
