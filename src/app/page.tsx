@@ -43,16 +43,21 @@ export default function Page() {
         </div>
       </section>
       <section id="about">
-        <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
-        </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary}
-          </Markdown>
-          <Button className="mt-4" href="/path-to-your-resume.pdf" variant="default" size="default" />
-        </BlurFade>
-      </section>
+  <BlurFade delay={BLUR_FADE_DELAY * 3}>
+    <h2 className="text-xl font-bold">About</h2>
+  </BlurFade>
+  <BlurFade delay={BLUR_FADE_DELAY * 4}>
+    <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
+      {DATA.summary}
+    </Markdown>
+    <a href="/Waqar-Resume.pdf" download>
+      <Button className="mt-4" variant="default" size="default">
+        Download Resume
+      </Button>
+    </a>
+  </BlurFade>
+</section>
+
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
