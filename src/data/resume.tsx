@@ -28,7 +28,8 @@ export const DATA = {
     "Git/Github",
     "C/C++",
     "MySQL",
-    "Rust"
+    "Rust",
+    "Docker"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
