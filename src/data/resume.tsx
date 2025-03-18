@@ -8,13 +8,14 @@ export const DATA = {
   location: "Lahore,Pakistan",
   locationLink: "https://www.google.com/maps/place/lahore",
   description:
-    "Software Engineer | Competitve Programmer | MERN | NextJs | C/C++",
+    "Software Engineer | Competitve Programmer | MERN | NextJs | Blockchain | C/C++",
   summary:
     "I'm a Software Engineer with expertise in front-end and back-end technologies, including JavaScript, ReactJS, and Next.js. I recently completed a Software Engineer Fellowship at Headstarter AI, where I built and deployed AI projects using agile methodologies. I'm also active in competitive programming, always looking to tackle new challenges and innovate through my work.",
   avatarUrl: "/me.jpeg",
   skills: [
     "HTML/CSS",
     "Javascript",
+    "Typescript",
     "Next.js",
     "React.js",
     "Bootstrap",
@@ -25,15 +26,17 @@ export const DATA = {
     "Node.js",
     "MongoDB",
     "Git/Github",
-    "C++",
+    "C/C++",
+    "MySQL",
+    "Rust"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "waqar216447@gmail.com",
+    tel: "+923014755508",
     social: {
       GitHub: {
         name: "GitHub",
@@ -73,6 +76,35 @@ export const DATA = {
   },
 
   work: [
+    {
+      company: "Summer of Bitcoin",
+      href: "https://www.summerofbitcoin.org",
+      badges: [],
+      location: "Remote",
+      title: "Active Participant",
+      logoUrl: "/btc.png",
+      start: "Feb 2025",
+      end: "Now",
+      description:
+        'An open-source Bitcoin program (similar to GSoC), where in intial bootcamp round done 3 assignments around bitcoin core and network advanced to proposal round. '
+    
+
+    },
+    {
+      company: "Devweekends",
+      href: "https://linktr.ee/DevWeekends",
+      badges: [],
+      location: "Remote",
+      title: "Trainer/Mentor",
+      logoUrl: "/dev.png",
+      start: "Jan 2024",
+      end: "Now",
+      description:
+        'Devweekends is a platform helping 20k+ Devs/Students,What is my role there? Conducted Bootcamps around web technologies and programming actively participating in communities day to day oprations from management to mentoring others.'
+    
+    
+
+    },
     {
       company: "Headstarter AI",
       href: "https://headstarter.co/",
@@ -171,6 +203,17 @@ export const DATA = {
     },
   ],
   hackathons: [
+    {
+      title: "CALICO'24",
+      dates: "Dec 26th, 2024",
+      location: "UC Berkeley, California",
+      description:
+        "BRONZE Medal with my team",
+
+      image:
+        "/calico.png",
+      links: [],
+    },
     {
       title: "Forman Ignite",
       dates: "June 25th - 28th, 2024",
